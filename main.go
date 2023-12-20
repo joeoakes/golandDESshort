@@ -42,6 +42,8 @@ func main() {
 	key := []byte("s3cr3t_k") // 8 bytes key for DES
 	plaintext := []byte("Hello, World!")
 
+	fmt.Printf("plaintext: %s\n", plaintext)
+
 	// Encrypt the data
 	encrypted, err := encryptDES(key, plaintext)
 	if err != nil {
